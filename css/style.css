@@ -1,0 +1,691 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#section {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.width-max {
+    width: 750px;
+}
+
+@media all and (max-width: 992px) {
+    .width-max {
+        width: 500px;
+    }
+}
+
+@media all and (max-width: 567px) {
+    .width-max {
+        width: 250px;
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/*                               nav                              */
+.nav-link.active {
+    color: #f25454 !important;
+}
+
+.nav-link {
+    color: #282828;
+}
+
+li i {
+    font-size: .75rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.5s ease;
+}
+
+.navbar-nav .nav-item:hover a {
+    color: #f25454 !important;
+}
+
+@media all and (max-width:768px) {
+    .navbar .container {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+/*                                home                             */
+
+
+.home .carousel-control-prev {
+    position: relative;
+}
+
+.icon-position button .prev {
+    position: fixed;
+    background-color: transparent;
+    display: flex !important;
+    top: 61%;
+    left: 0;
+
+}
+
+.icon-position button .forward {
+    position: fixed;
+    background-color: transparent;
+    display: flex !important;
+    top: 65%;
+    left: 0;
+
+    
+
+}
+
+
+.home h1,
+.home>span {
+    font-size: 5rem;
+}
+
+.home .fixed-icon {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    background-color: #1a1a1a;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+
+}
+
+.fixed-icon i {
+    position: relative;
+}
+
+.home .fixed-icon .overlay-fixedicon {
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.home .fixed-icon:hover .overlay-fixedicon {
+    opacity: 50%;
+}
+
+
+
+
+
+@media all and (max-width:768px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/*                                about                               */
+
+.about .container-fluid .back-layer h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 38px;
+    color: #282828;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.about .container-fluid .back-layer h2::before {
+    content: 'A';
+    position: absolute;
+    font-size: 5rem;
+    opacity: 8%;
+    top: -70%;
+    font-weight: 600;
+}
+
+.about .container-fluid .back-layer h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    top: 130%;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+.about .container-fluid .back-layer:hover h2::after {
+    width: 60px;
+}
+
+.about .container-fluid .back-layer>p {
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.about .row .col-lg-7 p {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 100;
+
+}
+
+.about .container-fluid .progress-percent {
+    color: #444;
+
+}
+
+.about .container-fluid .progress-percent-1 {
+    width: 75%;
+}
+
+.about .container-fluid .progress-percent-1-1 {
+    width: 90%;
+}
+
+.about .container-fluid .progress-percent-1-2 {
+    width: 80%;
+}
+
+.about .container-fluid .progress-percent-1-3 {
+    width: 65%;
+}
+
+.progress,
+.progress-stacked {
+    height: 0.3rem !important;
+
+}
+
+.progress-bar {
+    background-color: #f25454;
+}
+
+.progress-percent {
+    color: #444;
+}
+
+@media all and (max-width:992px) {
+    .width-max {
+        width: 100%;
+    }
+
+    .about {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .about .container-fluid {
+        padding-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .about .container-fluid .row {
+        padding-left: 0;
+    }
+}
+
+/*                                team                             */
+.team .container-fluid .back-layer h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 38px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.team .container-fluid .back-layer h2::before {
+    content: 'O';
+    position: absolute;
+    font-size: 4rem;
+    opacity: 8%;
+    top: -50%;
+    font-weight: 800;
+}
+
+.team .container-fluid .back-layer h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    top: 130%;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+.team .container-fluid .back-layer:hover h2::after {
+    width: 60px;
+}
+
+.team .container-fluid .back-layer>p {
+    color: #999;
+    font-size: 1.1rem;
+
+
+}
+
+.team .container-fluid .row .col-lg-3 .image-icns .imag {
+    overflow: hidden;
+}
+
+.team .container-fluid .row .col-lg-3 .icns {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f25454;
+    opacity: 0%;
+    transition: opacity 0.5s ease;
+}
+
+.team .container-fluid .row .col-lg-3 .image-icns:hover .icns {
+    opacity: 75%;
+}
+
+.team .container-fluid .row .col-lg-3 .image-icns .imag img {
+    transition: all 0.5s ease;
+}
+
+.team .container-fluid .row .col-lg-3 .image-icns:hover .imag img {
+    transform: scale(1.1);
+}
+
+.team .container-fluid .row .col-lg-3 .image-icns {
+    transition: all 0.5s ease;
+}
+
+.team .container-fluid .row .col-lg-3 .image-icns .caption h5 {
+    color: #282828;
+    font-size: 1rem;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+
+.team .container-fluid .row .col-lg-3 .image-icns .caption p {
+    color: #666;
+}
+
+.team .container-fluid .row .col-lg-3 .image-icns:hover h5 {
+    color: #f25454
+}
+.ideas-button {
+    background-color: #f25454;
+    position: relative;
+    transition: all 1s;
+    align-items: center;
+    text-align: center;
+}
+
+.team .container-fluid .row .col-md-12 .ideas .ideas-button .overlay-button {
+    width: 100%;
+    height: 100%;
+    background-color: #e6e6e6;
+    position: absolute;
+    opacity: 0%;
+}
+
+.team .container-fluid .row .col-md-12 .ideas .ideas-button:hover {
+    opacity: 50%;
+}
+
+@media all and (max-width:992px) {
+    .team .container-fluid .row  .ideas {
+        display: block !important;
+
+    }
+.ideas .idea-button button{margin: auto;}
+    .team .container-fluid .row .col-md-12 .ideas h3 {
+        font-size: medium;
+    }
+
+}
+
+
+/*                                services                             */
+.services .container-fluid .back-layer h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 38px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.services .container-fluid .back-layer h2::before {
+    content: 'S';
+    position: absolute;
+    font-size: 5rem;
+    opacity: 8%;
+    top: -50%;
+    font-weight: 600;
+}
+
+.services .container-fluid .back-layer h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    top: 130%;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+.services .container-fluid .back-layer:hover h2::after {
+    width: 60px;
+}
+
+.services .container-fluid .back-layer>p {
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.services .container-fluid .col-lg-4 .service-icn {
+    color: #f25454;
+
+}
+
+.services .container-fluid .col-lg-4 .service-caption h4 {
+    color: #282828;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color .3s;
+}
+
+.services .container-fluid .col-lg-4 .service-caption p {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.services .container-fluid .col-lg-4 .service-caption:hover h4 {
+    color: #f25454;
+}
+
+/*                                clients                             */
+.client .client-carosel {
+    width: 33.3%;
+}
+
+.clients .container-fluid .back-layer h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 38px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.clients .container-fluid .back-layer h2::before {
+    content: 'C';
+    position: absolute;
+    font-size: 5rem;
+    opacity: 8%;
+    top: -50%;
+    font-weight: 600;
+}
+
+.clients .container-fluid .back-layer h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    top: 130%;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+.clients .container-fluid .back-layer:hover h2::after {
+    width: 60px;
+}
+
+.clients .container-fluid .back-layer>p {
+    color: #999;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                contact                             */
+.contact .container .back-layer h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 38px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.contact .container .back-layer h2::before {
+    content: 'C';
+    position: absolute;
+    font-size: 5rem;
+    opacity: 8%;
+    top: -50%;
+    font-weight: 600;
+}
+
+.contact .container .back-layer h2::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    top: 130%;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+.contact .container .back-layer:hover h2::after {
+    width: 60px;
+}
+
+.contact .container .back-layer>p {
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-icns i {
+    color: #f25454;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption h4 {
+    color: #282828;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption p {
+    color: #666;
+}
+
+.contact .container .row .col-md-6 .contact-container {
+    position: relative;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption::after {
+    content: '';
+    position: absolute;
+    background-color: #eee;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption1:hover h4 {
+    color: #f25454;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption1 h4 {
+    transition: color 0.2s;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption:hover h4 {
+    color: #f25454;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption h4 {
+    transition: color 0.2s;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption1 p:hover a {
+    color: #f25454;
+}
+
+.contact .container .row .col-md-6 .contact-container .contact-caption1 p>a {
+    transition: color 0.2s;
+    color: #666;
+}
+
+.contact .container .row .col-md-6 button {
+    color: #e6e6e6;
+    background-color: #f25454;
+    position: relative;
+}
+
+.contact .container .row .col-md-6 .contact-button a {
+    color: white;
+}
+
+.contact .container .row .col-md-6 .overlay-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e6e6e6;
+    opacity: 0%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+.contact .container .row .col-md-6 .contact-button:hover .overlay-button {
+    opacity: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                footer                             */
+.footer-bg {
+
+    background-color: #222;
+    background-image: url(../images/dotted-map.png);
+}
+
+.footer-bg h4 {
+    color: #fff;
+}
+
+.footer-bg p {
+    color: #b0b0b0;
+}
+
+.footer-bg a {
+    color: #b0b0b0;
+    transition: color 0.5s;
+}
+
+.footer-bg p:hover a {
+    color: #f25454;
+}
+
+.footer-bg button {
+    color: #b0b0b0;
+    border: 1px solid #b0b0b0;
+    transition: all 0.5s;
+}
+
+.footer-bg button a {
+
+    transition: color .5s;
+    background-color: transparent;
+
+}
+
+.footer-bg button:hover a {
+    color: #f25454;
+}
+
+
+.footer-bg button:hover {
+
+    border: 1px solid #f25454;
+}
+
+
+.footer-social {
+    background-color: #1a1a1a;
+}
+
+.footer-social .container-fluid .row .col-md-9 .icons i:hover .icone{
+    color: #f25454;
+}
+
+.footer-social .container-fluid .row .col-md-3 .copyRight {
+    color: #b0b0b0;
+}
+.footer-social .container-fluid .row .col-md-3 .copyRight p span{
+    transition: all .5s;
+}
+
+
+.footer-social .container-fluid .row .col-md-3 .copyRight p:hover span{
+    color: #f25454;
+
+}
+
